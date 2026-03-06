@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Aditya Weds Sakshi · 2026</title>
+
+    <!-- Fonts preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Gotu&family=Aboreto&family=Yaldevi:wght@300;400;500&family=Cormorant+Infant:ital,wght@0,300;1,300;1,400&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Falling petals -->
+    <div class="petal-container"></div>
+
+    <button id="music-player" type="button">
+        <div class="music-disc" id="musicDisc">
+            <div class="music-disc-hole"></div>
+        </div>
+
+        <div class="music-info">
+            <span class="music-title">WEDDING SONG</span>
+            <span class="music-artist">Sakshi &amp; Aditya 2026</span>
+        </div>
+
+        <div class="music-wave paused" id="musicWave">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </button>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/audio/wedding-song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <main>
+
+        <!-- ══════════════════════════════════════════
+             HERO — 3 image layers stacked
+             .home__bg         = imgm1 (landscape bg)
+             .home__parallax-img2 = imgm2 (mid foliage)
+             .home__parallax-img3 = imgm3 (foreground)
+             .home__overlay    = dark vignette
+             .hero-names       = text on top
+        ══════════════════════════════════════════ -->
+        <div class="home">
+            <div class="home__bg"></div>
+            <div class="home__parallax-img2"></div>
+            <div class="home__parallax-img3"></div>
+            <div class="home__overlay"></div>
+
+            <div class="hero-names">
+                <div class="hero-top">ADITYA</div>
+                <div class="hero-mid">WEDS</div>
+                <div class="hero-bottom">SAKSHI</div>
+                <div class="hero-sub">लग्नपत्रिका · २०२६</div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#section"><i class='bx bx-mouse'></i></a>
+            </div>
+        </div>
+
+        <!-- Green transition band -->
+        <!-- <section class="l-section" id="section"></section> -->
+
+        <!-- Elephant row -->
+        <!-- <div class="elephant-row">
+            <img src="assets/img/elephant.png" class="elephant-img-left" alt="Elephant Left">
+            <img src="assets/img/elephant.png" class="elephant-img-right" alt="Elephant Right">
+        </div> -->
+
+        <!-- ══════════════════════════════════════════
+             CARPET SECTION — pink background with invite
+             ✅ No fixed height, no overflow:hidden
+        ══════════════════════════════════════════ -->
+        <section class="carpet-section">
+
+            <section class="invite-section" id="invite">
+                <div class="invite-inner">
+                    <div class="ci-ganesh">
+
+                        <!-- Ganesh icon -->
+                        <div class="ci-ganesh-svg ci-rv">
+                            <img decoding="auto" width="90" height="96"
+                                src="https://framerusercontent.com/images/tjsmDC8g305SmMs98B3ABqR5QE.png?width=279&height=296"
+                                alt="Ganesh" style="display:block;width:100%;height:100%;object-fit:cover;">
+                        </div>
+
+                        <p class="ci-om ci-rv ci-d1">ॐ श्री गणेशाय नमः</p>
+
+                        <div class="ci-rv ci-d1" style="margin-bottom:6px;">
+                            <p class="ci-family" style="font-size:13px;opacity:0.9;">।। श्री बालाजी प्रसन्न ।।</p>
+                            <p class="ci-family" style="font-size:12px;opacity:0.85;">।। श्री लक्ष्मी नृसिंह प्रसन्न ।।
+                            </p>
+                            <p class="ci-family" style="font-size:11px;opacity:0.85;margin-bottom:14px;">रा.न.वि.वि.
+                                आमच्या येथे श्री बालाजी कृपे करून</p>
+                        </div>
+
+                        <!-- Bride & Groom grid -->
+                        <div class="ci-rv ci-d1"
+                            style="display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:start;margin-bottom:20px;text-align:center;">
+
+                            <!-- BRIDE -->
+                            <div>
+                                <p
+                                    style="font-family:'Yaldevi',sans-serif;font-size:10px;letter-spacing:0.15em;color:var(--cream);opacity:0.8;margin-bottom:4px;">
+                                    वधू</p>
+
+                                <!-- chi in front of name -->
+                                <p
+                                    style="font-family:'Aboreto',sans-serif;font-size:34px;color:var(--cream);line-height:1;text-shadow:0 0 24px rgba(0,0,0,0.45);">
+                                    <span
+                                        style="font-family:'Cormorant Upright',serif;font-size:11px;opacity:0.9;vertical-align:middle;margin-right:8px;">
+                                        चि.सौ.कां.
+                                    </span>
+                                    साक्षी
+                                </p>
+
+                                <p
+                                    style="font-family:'Cormorant Upright',serif;font-size:11px;color:var(--amber);opacity:0.95;">
+                                    (M.Com)</p>
+                                <p
+                                    style="font-family:'Cormorant Upright',serif;font-size:12px;color:var(--cream);opacity:0.92;line-height:1.6;margin-top:8px;">
+                                    कै. सुभाष बाळकृष्ण चौलवार<br>यांची नात<br>सौ. सविता व श्री संजय चौलवार<br>रा.
+                                    नांदेड, यांची ज्येष्ठ कन्या
+                                </p>
+                            </div>
+
+                            <!-- Divider -->
+                            <div
+                                style="display:flex;flex-direction:column;align-items:center;padding-top:24px;gap:6px;">
+                                <span
+                                    style="font-size:1.4rem;filter:drop-shadow(0 0 10px rgba(231,147,0,0.7));">🙏</span>
+                                <div
+                                    style="width:1px;height:40px;background:linear-gradient(180deg,rgba(231,147,0,0.7),transparent);">
+                                </div>
+                                <span
+                                    style="font-family:'Cormorant Upright',serif;font-style:italic;font-size:18px;color:var(--amber);">&amp;</span>
+                                <div
+                                    style="width:1px;height:40px;background:linear-gradient(180deg,transparent,rgba(231,147,0,0.7));">
+                                </div>
+                            </div>
+
+                            <!-- GROOM -->
+                            <div>
+                                <p
+                                    style="font-family:'Yaldevi',sans-serif;font-size:10px;letter-spacing:0.15em;color:var(--cream);opacity:0.8;margin-bottom:4px;">
+                                    वर</p>
+
+                                <!-- chi in front of name -->
+                                <p
+                                    style="font-family:'Aboreto',sans-serif;font-size:34px;color:var(--cream);line-height:1;text-shadow:0 0 24px rgba(0,0,0,0.45);">
+                                    <span
+                                        style="font-family:'Cormorant Upright',serif;font-size:11px;opacity:0.9;vertical-align:middle;margin-right:8px;">
+                                        चि.
+                                    </span>
+                                    आदित्य
+                                </p>
+
+                                <p
+                                    style="font-family:'Cormorant Upright',serif;font-size:11px;color:var(--amber);opacity:0.95;">
+                                    (B.E. Civil)</p>
+                                <p
+                                    style="font-family:'Cormorant Upright',serif;font-size:12px;color:var(--cream);opacity:0.92;line-height:1.6;margin-top:8px;">
+                                    श्री केरबाजी लक्ष्मणराव बिडवई<br>यांचे नातू<br>सौ. सविता व श्री रामचंद्र
+                                    बिडवई<br>रा. लोहा जि. नांदेड, यांचे ज्येष्ठ चिरंजीव
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="ci-you-text ci-rv ci-d2">यांच्या शुभविवाह सोहळ्यास आपणास सादर निमंत्रण</p>
+
+                        <div class="ci-map-cta ci-rv ci-d3" onclick="openMap()">
+                            <span style="font-size:1.3rem;">📍</span>
+                            <span class="ci-map-label">Join our journey</span>
+                            <span style="color:rgba(255,255,255,0.65);font-size:0.9rem;">›</span>
+                        </div>
+                        <p class="ci-map-cta-sub ci-rv ci-d4">Click to open the map</p>
+
+                        <!-- Car image — displayed via CSS, placed in section3 in original -->
+
+                    </div>
+
+                </div>
+                <img src="assets/img/car.png" alt="Couple in car" class="section3-img">
+            </section>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             SECTION 3 — COUPLE MEET
+        ══════════════════════════════════════════ -->
+        <section class="section3" id="couple">
+            <div class="section3-container">
+                <div class="ci-couple">
+                    <span class="ci-couple-eyebrow ci-rv">✦ Meet The Couple ✦</span>
+                    <p class="ci-couple-sm ci-rv ci-d1">meet the</p>
+                    <p class="ci-couple-lg ci-rv ci-d1">bride and groom</p>
+
+                    <p class="ci-couple-bio ci-rv ci-d2">
+                        सोनियाच्या पावलाने, मेंढीच्या हाताने, हळरीच्या अंगाने, लग्न म्हणजे दोन जीवांचे मधुर मिलन...
+                        सनई–चौघडव्यांच्या स्वरात नवजीवनात केलेले पदार्पण.. सुख स्वप्नांच्या पाकळव्यांचे नाजुक उन्मीलन...
+                        सासर–माहेरच्या नात्यांची मंगळसुत्रात केलेली पवित्र अशी गुंफण... यासाठी हवा तुमचा शुभाशिर्वाद,
+                        शुभेच्छांची.. सुख राम्य पाखरण, त्यासाठी तुम्हाला हे आग्रहाचे निमंत्रण...!
+                    </p>
+
+                    <!-- Photo carousel -->
+                    <div class="ci-photo-outer ci-rv ci-d3">
+                        <div class="ci-frame-deco"></div>
+                        <div style="overflow:hidden;border-radius:34px;position:relative;">
+                            <div class="ci-carousel-track" id="ciTrack">
+                                <div class="ci-slide">
+                                    <img src="/assets/img/shoot/img1.jpeg" alt="Wedding Shoot 1"
+                                        style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                                <div class="ci-slide">
+                                    <img src="/assets/img/shoot/img2.jpeg" alt="Wedding Shoot 2"
+                                        style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                                <div class="ci-slide">
+                                    <img src="/assets/img/shoot/img3.jpeg" alt="Wedding Shoot 3"
+                                        style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                                <div class="ci-slide">
+                                    <img src="/assets/img/shoot/img4.jpeg" alt="Wedding Shoot 4"
+                                        style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                            </div>
+
+                            <div class="ci-carousel-arrows">
+                                <button class="ci-arr" onclick="ciSlide(-1)">
+                                    <svg width="14" height="14" viewBox="0 0 40 40">
+                                        <path fill="transparent" stroke="white" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" d="M22.5 12.5 15 20l7.5 7.5" />
+                                    </svg>
+                                </button>
+                                <div style="flex:1"></div>
+                                <button class="ci-arr" onclick="ciSlide(1)">
+                                    <svg width="14" height="14" viewBox="0 0 40 40">
+                                        <path fill="transparent" stroke="white" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" d="M17.5 12.5 25 20l-7.5 7.5" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="ci-photo-dots" id="ciPhotoDots"></div>
+                        </div>
+                    </div>
+
+                    <div class="ci-rsvp">
+                        <p class="ci-rsvp-hint ci-rv ci-d3">आपल्या उपस्थितीची आम्हाला प्रतीक्षा आहे</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             SECTION 4 — EVENTS
+        ══════════════════════════════════════════ -->
+        <section class="section4" id="events">
+            <img src="/assets/img/tree.png" class="tree-img" alt="Tree" />
+            <div class="section4-container">
+
+                <h2 class="section4-title">शुभ कार्यक्रम</h2>
+                <p class="section4-text">
+                    विवाहपूर्व व विवाहदिनीचे कार्यक्रम खालीलप्रमाणे. नकाशासाठी "नकाशा पाहा" क्लिक करा.
+                </p>
+
+                <div class="ci-events" style="padding-top:26px;">
+                    <div class="ci-events-grid">
+
+                        <div class="ci-ecard ci-vivah-full ci-rv">
+                            <span class="ci-flower-top">🪔</span>
+                            <span class="ci-flower-side">🌺</span>
+                            <div class="ci-ecard-inner">
+                                <div class="ci-ecard-name">सिमंत पूजन</div>
+                                <div class="ci-ecard-marathi">Simant Pujan</div>
+                                <div class="ci-ecard-line"></div>
+                                <div class="ci-ecard-date">रविवार, दि. १५ मार्च २०२६</div>
+                                <div class="ci-ecard-time">रात्री ८:०० वा.</div>
+                                <div class="ci-ecard-venue">विक्की गार्डन मंगल कार्यालय<br>नांदेड रोड पारडी, लोहा</div>
+                                <div class="ci-ecard-line"></div>
+                                <button class="ci-ecard-map" onclick="openMap()">📍 नकाशा पाहा</button>
+                            </div>
+                        </div>
+
+                        <div class="ci-ecard ci-rv ci-d1">
+                            <span class="ci-flower-top">🎶</span>
+                            <span class="ci-flower-side">🌸</span>
+                            <div class="ci-ecard-inner">
+                                <div class="ci-ecard-name">संगीत</div>
+                                <div class="ci-ecard-marathi">Sangeet Night</div>
+                                <div class="ci-ecard-line"></div>
+                                <div class="ci-ecard-date">रविवार, दि. १५ मार्च २०२६</div>
+                                <div class="ci-ecard-time">रात्री साखरपुड्यानंतर</div>
+                                <div class="ci-ecard-venue">विक्की गार्डन मंगल कार्यालय<br>नांदेड रोड पारडी, लोहा</div>
+                                <div class="ci-ecard-line"></div>
+                                <button class="ci-ecard-map" onclick="openMap()">📍 नकाशा पाहा</button>
+                            </div>
+                        </div>
+
+                        <div class="ci-ecard ci-rv ci-d2">
+                            <span class="ci-flower-top">🌼</span>
+                            <span class="ci-flower-side">🌻</span>
+                            <div class="ci-ecard-inner">
+                                <div class="ci-ecard-name">सप्तपदी</div>
+                                <div class="ci-ecard-marathi">Saptapadi</div>
+                                <div class="ci-ecard-line"></div>
+                                <div class="ci-ecard-date">सोमवार, दि. १६ मार्च २०२६</div>
+                                <div class="ci-ecard-time">सकाळी ६:०० वा.</div>
+                                <div class="ci-ecard-venue">विक्की गार्डन मंगल कार्यालय<br>नांदेड रोड पारडी, लोहा</div>
+                                <div class="ci-ecard-line"></div>
+                                <button class="ci-ecard-map" onclick="openMap()">📍 नकाशा पाहा</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="ci-ecard ci-vivah-full ci-rv ci-d3">
+                            <span class="ci-flower-top" style="font-size:3.5rem;">🌸</span>
+                            <span class="ci-flower-side">🪆</span>
+                            <div class="ci-ecard-inner">
+                                <div
+                                    style="font-family:'Gotu',sans-serif;font-size:10px;letter-spacing:0.4em;color:var(--amber);opacity:0.9;margin-bottom:4px;">
+                                    मिती फाल्गुन कृ. १२ शके १९४८</div>
+                                <div class="ci-ecard-name">विवाह मुहूर्त</div>
+                                <div class="ci-ecard-marathi">Vivah Muhurta · The Wedding</div>
+                                <div class="ci-ecard-line"></div>
+                                <div class="ci-ecard-date">सोमवार, दि. १६ मार्च २०२६</div>
+                                <div class="ci-ecard-time">मुहूर्त: दुपारी १२:४५ वा. — Lunch immediately after</div>
+                                <div class="ci-ecard-venue">विक्की गार्डन मंगल कार्यालय<br>नांदेड रोड पारडी, लोहा जि.
+                                    नांदेड</div>
+                                <div class="ci-ecard-line"></div>
+                                <button class="ci-ecard-map" onclick="openMap()" style="color:var(--amber);">📍 नकाशा
+                                    पाहा · See the route</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section6" id="events">
+            <img src="/assets/img/ele1.png" class="ele-img" alt="Tree" />
+
+            <div class="section6-stack">
+                <!-- BOX 1 (your existing div 그대로) -->
+                <div class="ci-rv ci-d4"
+                    style="margin-top:10px;padding:24px 16px;border:1px solid rgba(231,147,0,0.2);border-radius:20px; background: linear-gradient(160deg, #0d1f1e 0%, #1a3532 60%, #0a1412 100%);">
+                    <p
+                        style="font-family:'Aboreto',sans-serif;font-size:10px;letter-spacing:0.45em;color:var(--teal);text-align:center;margin-bottom:4px;">
+                        ✦ स्वागतेच्छुक ✦</p>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:26px;color:var(--cream);text-align:center;margin-bottom:20px;">
+                        आपले विनंत</p>
+                    <p
+                        style="font-family:'Yaldevi',sans-serif;font-size:11px;letter-spacing:0.15em;color:var(--amber);text-align:center;opacity:0.8;margin-bottom:12px;">
+                        — चौलवार परिवार —</p>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:14px;color:var(--cream);text-align:center;line-height:1.9;opacity:0.8;margin-bottom:6px;">
+                        गं.भा. शोभा सुभाष चौलवार<br>सौ. ललिता &nbsp;&nbsp;&nbsp; श्री विठ्ठल बाळकृष्ण चौलवार</p>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:12px;color:rgba(243,236,186,0.55);text-align:center;font-style:italic;margin-bottom:16px;">
+                        वरिल विनंतीस मान देऊन शुभ कार्यास अगत्याने यावे.</p>
+                    <div
+                        style="height:1px;background:linear-gradient(90deg,transparent,rgba(231,147,0,0.3),transparent);margin-bottom:16px;">
+                    </div>
+                    <div
+                        style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;font-family:'Cormorant Upright',serif;font-size:12px;color:rgba(243,236,186,0.75);line-height:1.9;text-align:left;">
+                        <span>सौ. रेखा</span><span>श्री राजेश सुभाष चौलवार</span>
+                        <span>सौ. सविता</span><span>श्री संजय सुभाष चौलवार</span>
+                        <span>सौ. ललिता</span><span>श्री नरहरी दगडूबा चौलवार</span>
+                        <span>सौ. संगिता</span><span>श्री नरेश श्रीराम चौलवार</span>
+                        <span>सौ. सुचिला</span><span>श्री बालाजी नरहरी चौलवार</span>
+                        <span>सौ. सुशिल</span><span>श्री बालाजी सखाराम चौलवार</span>
+                        <span>सौ. रंजना</span><span>श्री शरद भानुदास चौलवार</span>
+                    </div>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:12px;color:rgba(243,236,186,0.6);text-align:center;margin-top:10px;line-height:1.7;">
+                        चि. ऋषिकेश, व्यंकटेश, स्वरांजली, श्रीनिधी व समस्त चौलवार परिवार</p>
+                    <div
+                        style="height:1px;background:linear-gradient(90deg,transparent,rgba(231,147,0,0.3),transparent);margin:16px 0;">
+                    </div>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:13px;color:var(--amber);text-align:center;line-height:1.8;font-weight:600;">
+                        दिदीच्या लग्नाला यायचं हं.......! कु. स्वरांजली, श्रीनिधी, आदिती, प्रथमेश, तेजस</p>
+                    <p
+                        style="font-family:'Cormorant Upright',serif;font-size:13px;color:var(--amber);text-align:center;line-height:1.8;font-weight:600;">
+                        माऊच्या लग्नाला यायचं हं.......! चि. स्वरुप, रियांश, स्वरांश</p>
+                </div>
+                <div class="ci-rv ci-d4"
+                    style="margin-top:24px;padding:18px 16px;border:1px solid rgba(69,160,134,0.2);border-radius:16px; background: linear-gradient(160deg, #0d1f1e 0%, #1a3532 60%, #0a1412 100%);;">
+                    <p
+                        style="font-family:'Aboreto',sans-serif;font-size:10px;letter-spacing:0.4em;color:var(--teal);text-align:center;margin-bottom:16px;">
+                        ✦ प्रतिष्ठान ✦</p>
+                    <div style="display:flex;justify-content:space-around;gap:12px;flex-wrap:wrap;">
+                        <div style="text-align:center;">
+                            <p
+                                style="font-family:'Cormorant Upright',serif;font-size:14px;color:var(--cream);opacity:0.8;line-height:1.6;">
+                                श्री स्वामी समर्थ किराणा</p>
+                            <p
+                                style="font-family:'Gotu',sans-serif;font-size:10px;color:rgba(243,236,186,0.45);letter-spacing:0.1em;">
+                                कॅनॉल रोड, नांदेड</p>
+                        </div>
+                        <div style="text-align:center;">
+                            <p
+                                style="font-family:'Cormorant Upright',serif;font-size:14px;color:var(--cream);opacity:0.8;line-height:1.6;">
+                                चौलवार प्रोव्हीजन स्टोअर्स</p>
+                            <p
+                                style="font-family:'Gotu',sans-serif;font-size:10px;color:rgba(243,236,186,0.45);letter-spacing:0.1em;">
+                                सरगम कॉलनी, परभणी</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+         <!-- ══════════════════════════════════════════
+         FINAL SECTION — with bg and final image
+    ══════════════════════════════════════════ -->
+        <section class="final-section" id="final">
+            <div class="final-bg"></div>
+              <div class="final-shubhvivah">शुभविवाह</div>
+            <div class="final-container">
+                <img src="assets/img/final.png" alt="Sakshi & Aditya" class="final-image">
+            </div>
+        </section>
+        <!-- ══════════════════════════════════════════
+             SECTION 5 — INFO / THINGS TO KNOW
+        ══════════════════════════════════════════ -->
+        <section class="section5" id="info">
+            <div class="slider">
+                <div class="slide">
+
+                    <div class="section5-content">
+                        <h2 class="section5-title">Things to know</h2>
+                        <p class="section5-text">सुरुची भोज लग्नानंतर लगेच!</p>
+
+                        <div class="ci-tips-grid" style="margin-top:22px;display:flex;flex-direction:column;gap:12px;">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                                <div class="ci-tip">
+                                    <div class="ci-tip-icon">📸</div>
+                                    <div class="ci-tip-label">Hashtag</div>
+                                    <div class="ci-tip-text">Tag your photos<br>
+                                        <strong style="color:var(--amber)">#Saditya</strong>
+                                    </div>
+                                </div>
+                                <div class="ci-tip">
+                                    <div class="ci-tip-icon">🍽️</div>
+                                    <div class="ci-tip-label">सुरुची भोज</div>
+                                    <div class="ci-tip-text">लग्नानंतर लगेच भोजन — सर्व पाहुण्यांसाठी</div>
+                                </div>
+                            </div>
+                            <div style="display:flex;justify-content:center;">
+                                <div class="ci-tip" style="width:calc(50% - 6px);">
+                                    <div class="ci-tip-icon">📍</div>
+                                    <div class="ci-tip-label">विवाह स्थळ</div>
+                                    <div class="ci-tip-text">विक्की गार्डन मंगल कार्यालय, नांदेड रोड पारडी, लोहा जि.
+                                        नांदेड</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instagram / follow CTA -->
+                        <div class="ci-insta" style="padding:26px 0 0;">
+                            <span class="ci-follow-1">Follow</span>
+                            <span class="ci-follow-2">the</span>
+                            <span class="ci-follow-action">action</span>
+                            <p class="ci-hashtag">#SakshiAditya2026</p>
+                            <button class="ci-insta-btn" onclick="window.open('https://instagram.com','_blank')">
+                                Click to open our Instagram page
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </section>
+       
+
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- ScrollReveal (kept for compatibility) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Main script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+</main>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<!-- ScrollReveal (kept for compatibility) -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- Main script -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
